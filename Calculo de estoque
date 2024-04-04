@@ -1,0 +1,21 @@
+#include <stdio.h>
+// std = Padrão
+// io = Input/Output
+
+int main() {
+  int quantidade_minima;
+  int quantidade_maxima; 
+  float estoque_medio;
+
+  printf("Informe a quantidade mínima: ");
+  scanf("%d", &quantidade_minima);
+
+  printf("Informe a quantidade máxima: ");
+  scanf("%d", &quantidade_maxima);
+
+estoque_medio = (quantidade_minima + quantidade_maxima) / 2;
+
+  printf("O estoque médio da peça x é %.2f\n", estoque_medio);
+
+  return 0;
+  }
