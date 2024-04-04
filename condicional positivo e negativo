@@ -1,0 +1,21 @@
+#include <stdio.h>
+// std = Padrão
+// io = Input/Output
+
+// receber valor, se for positivo armazenar em a, se for negativo armazenar em b
+int main() {
+  int numero, a, b;
+
+  printf("Digite um número: ");
+  scanf("%d", &numero);
+  
+  if (numero > 0){ 
+    numero = a;
+    printf("O número é positivo");
+  } else {
+    numero = b;
+    printf("o número é negativo");
+  
+  }  
+  return 0;
+}
