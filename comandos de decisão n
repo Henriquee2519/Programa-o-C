@@ -1,0 +1,21 @@
+#include <stdio.h>
+// std = Padrão
+// io = Input/Output
+
+// calcular o peso ideal de uma pessoa formula (72.7 * altura) - 58
+int main() {
+  int n;
+
+  printf("Digite um número: ");
+  scanf("%d", &n);
+  
+  if (n > 100){ 
+    printf("%d", n);
+
+  } else {
+    n = 0;
+    printf("%d", n);
+  
+  }  
+  return 0;
+}
