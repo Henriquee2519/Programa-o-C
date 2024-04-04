@@ -10,10 +10,10 @@ int main() {
   scanf("%d", &numero);
   
   if (numero > 0){ 
-    numero = a;
+    a = numero;
     printf("O número é positivo");
   } else {
-    numero = b;
+    b = numero;
     printf("o número é negativo");
   
   }  
