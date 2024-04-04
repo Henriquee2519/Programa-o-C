@@ -1,0 +1,52 @@
+// valor do salário por mês
+
+#include <stdio.h>
+// std = Padrão
+// io = Input/Output
+
+
+#include <stdio.h>
+// std = Padrão
+// io = Input/Output
+
+
+int main() {
+// faça um algoritimo que pergunte quanto você ganha por hora.   
+
+float horas_trabalhadas, valor_da_hora, salario_do_mes;
+
+printf("Quantas horas você trabalha por mês? (Padrão é 220) " );
+scanf("%f", &horas_trabalhadas);
+
+printf("Quanto você ganha por hora? ");
+scanf("%f", &valor_da_hora);
+
+salario_do_mes = horas_trabalhadas * valor_da_hora;
+
+printf("O valor do seu salário é: %.2f\n", salario_do_mes);
+
+  return 0;
+}
+
+#include <stdio.h>
+// std = Padrão
+// io = Input/Output
+
+
+int main() {
+// agora faça um para saber o valor da sua hora.   
+
+float horas_trabalhadas, valor_da_hora, salario_do_mes;
+
+printf("Quantas horas você trabalha por mês? (Padrão é 220) " );
+scanf("%f", &horas_trabalhadas);
+
+printf("Quanto você ganha por mês? ");
+scanf("%f", &salario_do_mes);
+
+valor_da_hora = salario_do_mes / horas_trabalhadas;
+
+printf("O valor da sua hora é: %.2f\n", valor_da_hora);
+
+  return 0;
+}
