@@ -18,3 +18,26 @@ printf("O valor em centimetros é: %2.f\n", centimetros);
 
 return 0;
 }
+
+// outra forma de fazer é assim, para imprimir duas váriaveis 
+
+#include <stdio.h>
+// std = Padrão
+// io = Input/Output
+
+
+int main() {
+// faça um algoritimo que converta metros em centimetros
+// 1 metro = a 100 centimetros
+float metros;
+float centimetros;
+
+printf("Informe o valor em metros: ");
+scanf("%f", &metros);
+
+centimetros = metros * 100;
+
+printf("%2.f Metros em centimetros é: %2.f\n", metros, centimetros);
+
+return 0;
+}
