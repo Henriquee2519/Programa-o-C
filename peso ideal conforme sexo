@@ -8,31 +8,26 @@
 // para mulheres: (62.1*h) - 44.7
 
 int main() {
-  float a, peso_ideal;
-  char sexo;
+    float a, peso_ideal;
+    char sexo;
 
-printf("Informe a sua altura: ");
-  scanf("%f", &a);
-  
-gets(stdin); // corrigir bug, se receber numero e depois char, sempre corrigir o bug
-  
-printf("Informe o seu sexo m/f: ");
-  scanf("%c", &sexo);
+    printf("Informe a sua altura: ");
+    scanf("%f", &a);
+    getchar(); // Corrigir bug para limpar o buffer do stdin
 
-// usar tolower para que se o usuário colocar o sexo com letra maiúscula não de problema
-if (tolower (sexo) == 'm') {
-  peso_ideal = (72.7 * a) - 58;
-  printf("Seu peso ideal é %.2f ", peso_ideal);
+    printf("Informe o seu sexo m/f: ");
+    scanf(" %c", &sexo);
+    sexo = tolower(sexo); // Converter o sexo para minúsculo
 
-if (tolower(sexo) == 'f') {
-  peso_ideal = (62.1 * a) - 44.7;
-  printf("Seu peso ideal é %2.f ", peso_ideal);
-  }
+    if (sexo == 'm') {
+        peso_ideal = (72.7 * a) - 58;
+        printf("Seu peso ideal é %.2f\n", peso_ideal);
+    } else if (sexo == 'f') {
+        peso_ideal = (62.1 * a) - 44.7;
+        printf("Seu peso ideal é %.2f\n", peso_ideal);
+    } else {
+        printf("Sexo não reconhecido.\n");
+    }
 
-if (tolower (sexo) != 'm' && tolower (sexo) != 'f'){
-
-  printf("Sexo inválido");
-  }
-    
-return 0;
-}}
+    return 0;
+}
